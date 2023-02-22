@@ -1,0 +1,28 @@
+[
+  {
+    "question": "The scATAC-seq data will be sparse because?",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "scATAC-seq protocol is not entirely standardized yet",
+        "correct": false,
+        "feedback": "Not quite. scATAC-seq protocol is robust and has higher reproducibility."
+      },
+      {
+        "answer": "A sufficient number of single-cell profiles is lacking",
+        "correct": false,
+        "feedback": "Not quite. There are sufficient number of single-cell profiles available to create robust aggregate signal."
+      },
+      {
+        "answer": "The chromatin accessibility at each base will be binary",
+        "correct": true,
+        "feedback": "Yes. There are only two copies of DNA and regions with open chromatin with no reads due to loss of DNA material during the scATAC-seq protocol."
+      },
+      {
+        "answer": "Chromatin cannot dynamically switch between transcriptionally active euchromatin and inactive heterochromatin",
+        "correct": false,
+        "feedback": "Not quite. Chromatin is dynamic between active euchromatin and inactive heterochromatin."
+      }
+    ]
+  }
+]

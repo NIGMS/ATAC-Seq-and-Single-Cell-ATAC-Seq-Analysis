@@ -1,0 +1,18 @@
+[
+	{
+        "question": "For the control sample, what was the overall alignment rate? Type in the number (without the % sign)",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+		"value": "72.68",
+                "correct": true,
+                "feedback": "Looks like everything has worked correctly. Keep up the good work!. "
+            },
+            {
+                "type": "default",
+                "feedback": "Hmmm, something seems off. It should be 72.68. Double check the previous steps ran correctly and that you are listing the Control sample's overall alignment rate."
+            }
+        ]
+    }
+]

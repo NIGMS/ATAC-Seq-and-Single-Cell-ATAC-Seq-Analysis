@@ -1,0 +1,31 @@
+[
+	{
+        "question": "Why do you think we BPM normalize the signal?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "This will remove PCR duplicates.",
+                "correct": false,
+                "feedback": "BPM normalizes by the total number of reads obtained. We removed PCR duplicates in a previous step. Try again."
+            },
+
+            {
+                "answer": "We are normalizing to account for the total number of reads that we sequenced.",
+                "correct": false,
+                "feedback": "Close. However, we already removed several reads that didn't map, had low quality, or represented PCR duplicates. Therefore, we are actually normalizing by the total number of useable reads."
+            },
+
+            {
+                "answer": "This will remove repetitive regions.",
+                "correct": false,
+                "feedback": "Try again. BPM normalization divides by the millions of useable reads. It doesn't account for repetitive regions, but we did previously perform a mapping quality filter step that helps to remove some of these affects."
+            },
+    
+            {
+                "answer": "We are normalizing for differing depths of coverage.",
+                "correct": true,
+                "feedback": "Yes. There are several different normalization schemes that people use. BPM normalization counts the reads in each bin, sums these counts divided by 1e6 to get the per million scaling factor, and divides each bin's count by the per million factor. This is similar to TPM used in RNA-seq. By dividing by the per million counts, we can better compare two samples that may have different coverage depths."
+            }
+        ]
+    }
+]

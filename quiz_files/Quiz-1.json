@@ -1,0 +1,28 @@
+[
+  {
+    "question": "ATAC-seq protocols have struggled with an average of 50% - 80% contaminating mitochondrial DNA reads and are removed during processing. The mitochondrial genome has higher accessiblity due to?",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "No ATAC-seq peaks of interest",
+        "correct": false,
+        "feedback": "Not quite. There are genes that are of interest."
+      },
+      {
+        "answer": "Lesser number of genes",
+        "correct": false,
+        "feedback": "Not quite. There are about 37 genes participating in both nucleus and mitohondria."
+      },
+      {
+        "answer": "Lack of chromatin packaging",
+        "correct": true,
+        "feedback": "Yes. The mitochondrial genome is not enveloped, and is not packaged into chromatin."
+      },
+      {
+        "answer": "Lack of protein-coding genes",
+        "correct": false,
+        "feedback": "Not quite. The mitochondrial genome contains 37 genes that encode 13 proteins, 22 tRNAs, and 2 rRNAs."
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "question": "One caveat with bulk ATAC-seq is?",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "Chromatin signal is averaged for all cells in a sample, limiting insights into low-abundance phenotypes or rare populations of cells.",
+        "correct": true,
+        "feedback": "Yes. scATAC-seq enables researchers to interrogate the chromatin landscape of hundreds to thousands of individual cells at the single-cell level."
+      },
+      {
+        "answer": "Low cell viability causes unreliable cell recovery.",
+        "correct": false,
+        "feedback": "Not quite. Bulk ATAC-seq represents abundance of chromatin, therefore, is not a caveat."
+      },
+      {
+        "answer": "Analyze chromatin accessibility in thousands of individual cells per sample.",
+        "correct": false,
+        "feedback": "Not quite. bulk ATAC-seq analyzes the chromatin signal in aggregates."
+      },
+      {
+        "answer": "As compared to single-cell, bulk ATAC-seq technology requires much more starting material.",
+        "correct": false,
+        "feedback": "Not quite. The ATAC-seq protocol requires only about 50,000 cells as starting material."
+      }
+    ]
+  }
+]

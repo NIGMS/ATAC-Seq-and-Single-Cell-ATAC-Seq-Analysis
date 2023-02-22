@@ -1,0 +1,19 @@
+[
+	{
+        "question": "Why can it be valuable to filter reads with low mapping quality?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "This will remove PCR duplicates.",
+                "correct": false,
+                "feedback": "While it can be important to remove PCR duplicates, each duplicate can actually have high mapping quality. We'll perform a separate step to deduplicate the reads. Try again. "
+            },
+  
+            {
+                "answer": "To avoid reads that match multiple locations.",
+                "correct": true,
+                "feedback": "Yes. Low mapping quality stems from multiple aspects which can include low quality of each base as well as the read matching multiple places in the genome. Removing reads with low mapping quality can help diminish biases, particularly at repetitive loci. "
+            }
+        ]
+    }
+]

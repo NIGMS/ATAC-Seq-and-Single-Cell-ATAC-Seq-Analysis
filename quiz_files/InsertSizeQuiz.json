@@ -1,0 +1,28 @@
+[
+	{
+        "question": "Based on our knowledge of the ATAC-seq insert distributions, which of the following would be an appropriate insert size range to obtain mononucleosomal fragments?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "<150",
+                "correct": false,
+                "feedback": "Incorrect. Remember that nucleosomes include 145 bp of DNA wrapped around histones. Fragments less than this size likely correspond to nucleosome free regions."
+            },
+            {
+                "answer": "150-175",
+                "correct": false,
+                "feedback": "Close, but while nucleosomes consist of 145 bp of DNA, the insertion by Tn5 a short distance from nucleosomes provides a range of insert values starting at 145 and extending further. Choose the appropriate size range using the graph shown at the start of this module."
+            },
+            {
+                "answer": "150-250",
+                "correct": true,
+                "feedback": "Correct. While nucleosomes consist of 145 bp of DNA, the insertion by Tn5 provides a slightly larger size range. Using the above graph, we can pick the appropriate range."
+            },
+            {
+                "answer": "300-500",
+                "correct": false,
+                "feedback": "Nucleosomes consist of 145 bp of DNA, thefore 300-500 bp insert sizes typically correspond to di-nucleosomes."
+            }
+        ]
+    }
+]

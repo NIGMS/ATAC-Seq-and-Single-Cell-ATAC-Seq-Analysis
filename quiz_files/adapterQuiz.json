@@ -1,0 +1,28 @@
+[
+	{
+        "question": "Please choose the most likely outcome. What sequence is present in the fastq file if we sequence 50 bp, but the Tn5 inserted adapters 30 bp apart?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The sequence in the fastq file will only be 30 bp.",
+                "correct": false,
+                "feedback": "Incorrect. Remember that Tn5 adds both a 5' and 3' adapter which adds approximately 150 bp of sequence to the fragments. "
+            },
+            {
+                "answer": "These sequences will fail and not be in the fastq file.",
+                "correct": false,
+                "feedback": "Incorrect. Remember that Tn5 adds both a 5' and 3' adapter which adds approximately 150 bp of sequence to the fragments. "
+            },
+            {
+                "answer": "The sequence in the fastq file will include N's after the original fragment.",
+                "correct": false,
+                "feedback": "Incorrect. N's can occur in sequences, but remember that the 5' and 3' adapters are sequence-able as well."
+            },
+            {
+                "answer": "The sequence in the fastq file will include 20 bp of adapter sequence.",
+                "correct": true,
+                "feedback": "Correct. Sequencing from the left and right ends will result in a hybrid sequence that includes the fragment + adapter sequence. "
+            }
+        ]
+    }
+]

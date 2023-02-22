@@ -1,0 +1,23 @@
+[
+	{
+        "question": "Accessible sites are represented by peaks. How could PCR duplicates affect this?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "They won't impact the results.",
+                "correct": false,
+                "feedback": "Try again. PCR duplicates represent a bias introduced during the preparation of the library. Having the exact sam sequence multiple times will cause multiple signals to align to the same coordinates, creating a build up of signal i.e. a peak."
+            },
+            {
+                "answer": "These sequences will be randomly distributed across the genome.",
+                "correct": false,
+                "feedback": "Not quite. PCR duplicates represent multiple reads with the same sequence and therefore will align to the same genomic coordinates. This can create an artificial build up of reads, i.e. a peak."
+            },
+            {
+                "answer": "They can can change the intensity of peaks or create false peaks.",
+                "correct": true,
+                "feedback": "Yes. PCR duplicates represent multiple reads with the same sequence and therefore will align to the same genomic coordinates. This can create an artificial build up of reads, i.e. a peak."
+            }
+        ]
+    }
+]

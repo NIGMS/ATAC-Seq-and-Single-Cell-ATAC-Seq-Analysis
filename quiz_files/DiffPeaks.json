@@ -1,0 +1,28 @@
+[
+	{
+        "question": "Please click on all the answers that you think apply (there can be more than one). What are some limitations of simply intersecting two peak lists to identify differential peaks?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Simple overlaps fail to identify quantitative differences.",
+                "correct": true,
+                "feedback": "Correct. Intersection fails to account for signal intensity."
+            },
+            {
+                "answer": "Peak calling has error rates that are aggravated by simple overlaps.",
+                "correct": true,
+                "feedback": "Correct. Because peak calling is performed in each sample, a missing peak call in one sample could be due to the false negative rate. "
+            },
+            {
+                "answer": "Simple overlaps fail to account for random shifts in the data.",
+                "correct": true,
+                "feedback": "Correct. Some peak calls can be randomly shifted slightly between samples which simple overlap does not account for."
+            },
+            {
+                "answer": "Different samples may have distinct immunoprecipitation (IP) effiencies",
+                "correct": true,
+                "feedback": "Correct. IP efficiency can dramatically impact peak detection and thereby change the simple overlap results. "
+            }
+        ]
+    }
+]

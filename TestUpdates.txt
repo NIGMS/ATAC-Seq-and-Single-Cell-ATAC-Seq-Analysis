@@ -1,0 +1,57 @@
+############
+## README ## 
+############
+- rearranged phrasing in readme to make document more cohesive without submodule 4 content only at the end
+- removed detailed info about submodule 4 from read me 
+- added image to reflect submodule 4 flow to read me from Avinash
+- add figure caption for the first cluster image in the read me and updated html to wrap text around figure and caption 
+- add updated image info, machine type info, and screenshot of notebook creation for SM4 in creating a VM section
+- moved GCP Architecture diagrams into their own section and added sentence addressing them.
+- added pub med links to all papers referenced
+
+
+############
+##  SM 1  ## 
+############
+- code cell 3 should see 4 files we see 11. are some result files? 
+- remove commented and unnecessary install steps 
+- updated quiz json paths to 'quiz_files' directory to standardize 
+
+############
+##  SM 2  ## 
+############
+- remove commented and unnecessary install steps 
+- updated quiz json paths to 'quiz_files' directory to standardize
+
+############
+##  SM 3  ## 
+############
+- remove commented and unnecessary install steps 
+- updated quiz json paths to 'quiz_files' directory to standardize
+
+############
+##  SM 4  ## 
+############
+- moved detailed material about submodue 4 from read me to top of submodule 4
+- added a paragraph describing the purple figure for steps in scATAC seq
+- updated quiz json paths to 'quiz_files' directory to standardize
+- removed background image as it is from an analysis that combines rna-seq and atac seq the rna-seq aspects of the image are distracting(https://www.sciencedirect.com/science/article/pii/S2001037020303019 - graphical abstract)...replaced by bringing up the atac seq specific graphic shown later on (yellow)
+- edited overview section to Data as it describes content more accurately
+- added pubmed links to all papers referenced
+- added a reference to nvidia github for acknowledgment
+
+OUTSTANDING SM4: 
+- little to no colored box usage as shown in workshop 9
+- reinstalling cuda toolkit even though python 3 cudo 11.0 image already has it installed..install steps for rapds and cudo took 20-30 minutes which is prohibitive for students especially as we had an image with these heavy duty pre-reqs installed a few months ago
+- recommend google pso/deloitte team continues to solution for custom image prior to final module release
+- most of the following are already installed when you repeat this step in notebook from what we have from terminal installs:
+%pip install numpy
+%pip install scanpy
+%pip install anndata
+%pip install matplotlib
+%pip install utils
+%pip install rapids
+- we already ran this step in the terminal '!pip install scanpy wget' don't need to run it again in notebook...it is ideal for students to keep install steps in the notebook where we can and avoid using the terminal 
+- 
+
+
