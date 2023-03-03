@@ -40,7 +40,7 @@ These tutorials were designed to be used on cloud computing platforms, with the 
 With this in mind, our tutorials use Jupyter Notebook files, which Google Cloud Platform, Amazon Web Services, and Microsoft Azure all provide support for. Therefore, requirements should only require creation of a virtual machine on one of these providers, and the downloading of this repositories files to the machine. It is important to note that submodule 4 uses a custom image created with Docker which has pre-requisite NVIDIA software and drivers installed for single cell analysis. GCP uses port 8080 for jupyterlab which allows this image to be opened in VertexAI. You'll see this reflected in the Dockerfile that is included in the Tutorial 4 directory. Steps to make the Dockerfile in GCP are included below and can be done from any vm or cloud shell. To reuse, keen-clarity-352623 must be replaced with your own gcp project id and container registry or artifact registry must be active with the gcr.io repo inside.
 
 <!-- #raw -->
-docker build ./
+`docker build ./`
 docker tag 2c44b046c59c gcr.io/keen-clarity-352623/nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9
 docker push gcr.io/keen-clarity-352623/nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9
 <!-- #endraw -->
