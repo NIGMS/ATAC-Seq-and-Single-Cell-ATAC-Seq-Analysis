@@ -5,7 +5,7 @@
 <!-- #region -->
 ## <a name="overview">Overview</a>
 
-Included here are several tutorials in the form of Jupyter Notebook's.
+Included here are several tutorials in the form of Jupyter Notebooks.
 
 The purpose of these tutorials is to help users familiarize themselves with the analysis steps for processing ATAC-seq data including considerations for single-end, paired-end, or single-cell data. 
 
@@ -37,7 +37,7 @@ Dataset sizes for single-cell genomics studies are increasing, presently reachin
 
 These tutorials were designed to be used on cloud computing platforms, with the aim of requiring nothing but the files within this GitHub repository.
 
-With this in mind, our tutorials use Jupyter Notebook files, which Google Cloud Platform, Amazon Web Services, and Microsoft Azure all provide support for. Therefore, requirements should only require creation of a virtual machine on one of these providers, and the downloading of this repositories files to the machine. It is important to note that submodule 4 uses a custom image created with Docker which has pre-requisite NVIDIA software and drivers installed for single cell analysis. GCP uses port 8080 for jupyterlab which allows this image to be opened in VertexAI. You'll see this reflected in the Dockerfile that is included in the Tutorial 4 directory. Steps to make the Dockerfile in GCP are included below and can be done from any vm or cloud shell. To reuse, keen-clarity-352623 must be replaced with your own gcp project id and container registry or artifact registry must be active with the gcr.io repo inside.
+With this in mind, our tutorials use Jupyter Notebook files, which Google Cloud Platform, Amazon Web Services, and Microsoft Azure all provide support for. Therefore, requirements should only require creation of a virtual machine on one of these providers, and the downloading of this repositories files to the machine. It is important to note that submodule 4 uses a custom image created with Docker which has pre-requisite NVIDIA software and drivers installed for single cell analysis. GCP uses port 8080 for jupyterlab which allows this image to be opened in VertexAI. You'll see this reflected in the Dockerfile that is included in the Tutorial 4 directory. Steps to make the Dockerfile in GCP are included below and can be done from any VM or cloud shell. To reuse, `keen-clarity-352623` must be replaced with your own GCP project id and container registry or artifact registry must be active with the gcr.io repo inside.
 
 ```
 docker build ./
@@ -75,7 +75,7 @@ Within the Workbench screen, select the option to create a 'New Notebook'.
 
 Notebooks for submodules 1-3 use a GCP provided 'Python3' image. You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. Ignore the advanced options for now, and a default virtual machine will be created. A default machine(n1-standard-4) has 4 vCPUS and 15GB RAM which is sufficient for submodules 1-3 using the example dataset. Creating a machine may take a few minutes to finish.
 
-The notebook for submodule 4 uses a custom image called 'nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9'. The n1-standard-8 machine type is sufficient for the example data used in this notebook. Remember to check yes to auto install required drivers and adjust your machine type under advanced options when you create your notebook, as shown below. 
+The notebook for submodule 4 uses a custom image called `nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9`. The n1-standard-8 machine type is sufficient for the example data used in this notebook. Remember to check yes to auto install required drivers and adjust your machine type under advanced options when you create your notebook, as shown below. 
 
 <b>Notebook Creation for submodules 1-3:</b>
 ![ATAC-Seq workflow](images/Workbenchr.png)
@@ -86,11 +86,11 @@ Step 1: In create new notebook, go to Environment --> Custom container
 <br>
 ![ATAC-Seq workflow](images/WorkbenchSM4_Env.png)
 <br>
-Step 2: In Docker containter image select the latest tag for the container called 'nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9'
+Step 2: In Docker containter image select the latest tag for the container called `nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9`
 <br>
 ![ATAC-Seq workflow](images/WorkbenchSM4_Img.png)
 <br>
-Step 3: Finally, in Machine Configuration use the following parameters to set up your machine. Make sure to select install Nvidia Drivers. You can continue and create your machine. 
+Step 3: Finally, in Machine Configuration use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. 
 <br>
 ![ATAC-Seq workflow](images/WorkbenchSM4_GPU.png)
 
@@ -107,7 +107,7 @@ Note, when you are finished running code, you should turn off your virtual machi
 
 Now that you have created your virtual machine, and are in the JupyterLab screen, you can run our tutorial files. But first you will need to download them.
 The easiest way to do this would be to clone the NIGMS repository into your Vertex AI notebook. This can be done by using the 'Git' menu in JupyterLab, and selecting the clone option. 
-Next you can type in the link of repository: "https://github.com/NIGMS/atacseqUNMC" (without quotation marks) and click 'Clone'. 
+Next you can type in the link of repository: `https://github.com/NIGMS/atacseqUNMC` and click 'Clone'. 
 
 This should download our repository, and the tutorial files inside, into a folder called 'atacseqUNMC'. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
 
