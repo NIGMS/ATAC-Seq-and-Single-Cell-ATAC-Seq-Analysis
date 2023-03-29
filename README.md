@@ -12,11 +12,11 @@ The purpose of these tutorials is to help users familiarize themselves with the 
 <div style="padding: 3px; margin: 10px; float: left;">
   <figure style="display: table;margin:0px">
     <img width="336" height="280" style="display:block" src="images/60k_bmmc_dsciATAC.png"/>
-    <figcaption style="display: table-caption;caption-side: bottom;text-align: center;border: 1px dotted blue;font-family:times new roman,serif;font-size:14px;font-weight:bold;font-style:italic">
-    Source: https://github.com/NVIDIA-Genomics-Research/rapids-single-cell-examples</figcaption>
+    <figcaption style="display: table-caption;caption-side: bottom;text-align: left;border: 1px dotted blue;font-family:times new roman,serif;font-size:14px;font-weight:bold;font-style:italic">
   </figure>
 </div>
 
+  Source: https://github.com/NVIDIA-Genomics-Research/rapids-single-cell-examples</figcaption>
 
 These tutorials do this by going step-by-step through specific workflows. These workflows cover the start to finish of basic bioinformatics analysis; starting from downloading raw sequence data, and extending to differential peak identification, genome annotation, and transcription factor footprinting, while producing common plots and visualizations. Submodules 1 through 3 focus on analysis of bulk cellular data while submodule 4 focuses on single cell data. 
 
