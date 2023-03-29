@@ -12,7 +12,8 @@ The purpose of these tutorials is to help users familiarize themselves with the 
 <div style="padding: 3px; margin: 10px; float: left;">
   <figure style="display: table;margin:0px">
     <img width="336" height="280" style="display:block" src="images/60k_bmmc_dsciATAC.png"/>
-    <figcaption style="display: table-caption;caption-side: bottom;text-align: center;border: 1px dotted blue;font-family:times new roman,serif;font-size:14px;font-weight:bold;font-style:italic">Source: https://github.com/NVIDIA-Genomics-Research/rapids-single-cell-examples</figcaption>
+    <figcaption style="display: table-caption;caption-side: bottom;text-align: center;border: 1px dotted blue;font-family:times new roman,serif;font-size:14px;font-weight:bold;font-style:italic">
+    Source: https://github.com/NVIDIA-Genomics-Research/rapids-single-cell-examples</figcaption>
   </figure>
 </div>
 
