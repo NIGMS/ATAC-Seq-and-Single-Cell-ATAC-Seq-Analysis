@@ -25,6 +25,8 @@ For submodule 4, we will use RAPIDS pipeline to demonstrate on how to use analyz
 Dataset sizes for single-cell genomics studies are increasing, presently reaching millions of cells. With RAPIDS pipeline, it becomes easy to analyze large datasets interactively and in real time, enabling faster scientific discoveries.
 
 This module will cost you about $3.80 to run, assuming you tear down all resources upon its completion.
+
+Watch this [Introduction Video](https://youtu.be/w5reYUKnf60) to learn more about the module.
 <br>
 
 ## Table of Contents
