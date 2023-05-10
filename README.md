@@ -167,7 +167,7 @@ For more information on how to run these in the cloud, navigate to the [Getting 
 **Workflow for sc-ATAC Sequencing (submodule 4)**. 
   
 
-**[Tutorial Four](ATACseq_Tutorial3_Downstream.ipynb):** In this section we will demonstrate a single cell ATAC-Seq analysis workflow. 
+**[Tutorial Four](scATACseq_Tutorial4.ipynb):** In this section we will demonstrate a single cell ATAC-Seq analysis workflow. 
 
 ## GCP Architecture Diagrams
 
