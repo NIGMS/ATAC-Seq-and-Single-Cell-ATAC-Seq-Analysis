@@ -63,8 +63,8 @@ To get there, select the navigation menu, and navigate to 'Vertex AI' under the 
 Within the Vertex AI submenu, select 'Workbench'.
 
 ![ATAC-seq workflow](images/VertexAI.png)
-
-<!-- #region -->
+   
+   
 ### Creating a Virtual Machine
 
 Within the Workbench screen, select the option to create a 'New Notebook'.
