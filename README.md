@@ -9,7 +9,7 @@ Included here are several tutorials in the form of Jupyter Notebooks.
 
 The purpose of these tutorials is to help users familiarize themselves with the analysis steps for processing ATAC-seq data including considerations for single-end, paired-end, or single-cell data. 
 
-![](images/60k_bmmc_dsciATAC.png)
+![atacseq 60k image](images/60k_bmmc_dsciATAC.png)
 
 These tutorials do this by going step-by-step through specific workflows. These workflows cover the start to finish of basic bioinformatics analysis; starting from downloading raw sequence data, and extending to differential peak identification, genome annotation, and transcription factor footprinting, while producing common plots and visualizations. Submodules 1 through 3 focus on analysis of bulk cellular data while submodule 4 focuses on single cell data. 
 
