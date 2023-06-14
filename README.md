@@ -1,5 +1,4 @@
 [comment]: <> (Hi. If you are seeing this message, please open this file with markdown preview or Jupyter Notebook. You can do this by right clicking on the readme file and picking 'open with'.)
-![course-card](images/UNMC-course-card.png)
 # An open-source interactive pipeline tutorial for differential ATAC-seq footprint analysis
 ## INBRE Google Cloud Training Tutorials - ATAC-seq
 
