@@ -108,7 +108,7 @@ Note, when you are finished running code, you should turn off your virtual machi
 
 Now that you have created your virtual machine, and are in the JupyterLab screen, you can run our tutorial files. But first you will need to download them.
 The easiest way to do this would be to clone the NIGMS repository into your Vertex AI notebook. This can be done by using the 'Git' menu in JupyterLab, and selecting the clone option. 
-Next you can type in the link of repository: `https://github.com/NIGMS/atacseqUNMC` and click 'Clone'. 
+Next you can type in the link of repository: `https://github.com/NIGMS/ATAC-Seq-and-Single-Cell-ATAC-Seq-Analysis` and click 'Clone'. 
 
 This should download our repository, and the tutorial files inside, into a folder called 'atacseqUNMC'. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
 
