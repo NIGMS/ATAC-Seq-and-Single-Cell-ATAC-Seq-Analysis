@@ -82,16 +82,16 @@ The notebook for submodule 4 uses a custom image called `nvidiaforvertexai-rapid
 
 **Notebook Creation for submodule 4:**
 
-Step 1: In create new notebook, go to Environment --> Custom container 
+Step 1: Click Create New, click Advanced Options at the bottom of the screen, go to the Environment tab on the left, select Debian 10 under Operating System and Custom container under Environment
 
-![ATAC-Seq workflow](images/WorkbenchSM4_Env.png) 
+![ATAC-Seq workflow](images/WorkbenchSM4_Env-2.png) 
   
   
-Step 2: In Docker containter image select the latest tag for the container called `nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9`
+Step 2: In Docker containter image enter the following path `us-east4-docker.pkg.dev/nih-cl-shared-resources/nigms-sandbox/nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9@sha256:bb6703315633f21281e8caceed811f74822564a63ede01953664fe8d58b0c658`
   
-![ATAC-Seq workflow](images/WorkbenchSM4_Img.png)
+![ATAC-Seq workflow](images/WorkbenchSM4_Img-2.png)
   
-Step 3: Finally, in Machine Configuration use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. 
+Step 3: Finally, in Machine Type use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. 
   
 ![ATAC-Seq workflow](images/WorkbenchSM4_GPU.png)
 
