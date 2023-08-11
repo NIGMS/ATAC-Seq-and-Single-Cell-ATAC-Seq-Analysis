@@ -71,18 +71,27 @@ Within the Vertex AI submenu, select 'Workbench'.
    
 ### Creating a Virtual Machine
 
-Within the Workbench screen, select the option to create a 'New Notebook'.
+In your Vertex AI Workbench, click Create New. Make sure User-Managed Notebooks is highlighted, as shown in the screenshot below. 
 
-Notebooks for submodules 1-3 use a GCP provided 'Python3' image. You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. Ignore the advanced options for now, and a default virtual machine will be created. A default machine(n1-standard-4) has 4 vCPUS and 15GB RAM which is sufficient for submodules 1-3 using the example dataset. Creating a machine may take a few minutes to finish.
+![Create New user managed notebook](images/Create_new_notebook.png)
 
-The notebook for submodule 4 uses a custom image called `nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9`. The n1-standard-8 machine type is sufficient for the example data used in this notebook. Remember to check yes to auto install required drivers and adjust your machine type under advanced options when you create your notebook, as shown below. 
+In the new instance window, scroll down and select Advanced Options
+
+![Select Advanced Options](images/Advanced_options.png)
+
+In the Environment tab, Select the appropriate operating system and environment. Make sure to click the Enable Idle Shutdown button in the Environment tab as shown in the screenshot below. Finally, select the appropriate hardware in the Machine type tab.
+
+![Enable Idle Shutdown](images/Enable_auto_shutdown.png)
 
 **Notebook Creation for submodules 1-3:**
-![ATAC-Seq workflow](images/Workbenchr.png)
+
+Notebooks for submodules 1-3 use a GCP provided 'Python3' image. You can then choose a name for your virtual machine, and preferably choose a server location closest to you. A default machine(n1-standard-4) has 4 vCPUS and 15GB RAM which is sufficient for submodules 1-3 using the example dataset. Creating a machine may take a few minutes to finish.
 
 **Notebook Creation for submodule 4:**
 
-Step 1: Click Create New, click Advanced Options at the bottom of the screen, go to the Environment tab on the left, select Debian 10 under Operating System and Custom container under Environment
+The notebook for submodule 4 uses a custom image. The n1-standard-8 machine type is sufficient for the example data used in this notebook. Remember to check yes to auto install required drivers and adjust your machine type under advanced options when you create your notebook.
+
+Step 1: In the Environment tab, select Debian 10 under Operating System and Custom container under Environment
 
 ![ATAC-Seq workflow](images/WorkbenchSM4_Env-2.png) 
   
@@ -91,7 +100,7 @@ Step 2: In Docker containter image enter the following path `us-east4-docker.pkg
   
 ![ATAC-Seq workflow](images/WorkbenchSM4_Img-2.png)
   
-Step 3: Finally, in Machine Type use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. 
+Step 3: Finally, in Machine Type use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. Again, make sure to always click the Enable Idle Shutdown button, especially when working with GPUs. Leaving a GPU machine running can run up huge cloud costs in a short period of time, so protect your budget by enabling idle shutdown.
   
 ![ATAC-Seq workflow](images/WorkbenchSM4_GPU.png)
 
