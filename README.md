@@ -62,55 +62,33 @@ Once you have these, you can begin by first navigating to https://console.cloud.
 
 ### Navigating to the Vertex AI Workbench
 
-Once a project has been selected, we can navigate to the Vertex AI Workbench, where we can make our virtual machine. 
-To get there, select the navigation menu, and navigate to 'Vertex AI' under the Artificial Intelligence section. 
-Within the Vertex AI submenu, select 'Workbench'.
+### Creating a user managed notebook
 
-![ATAC-seq workflow](images/VertexAI.png)
-   
-   
-### Creating a Virtual Machine
-
-Within the Workbench screen, select the option to create a 'New Notebook'.
-
-Notebooks for submodules 1-3 use a GCP provided 'Python3' image. You can then choose a name for your virtual machine, you can name it whatever you like, and preferably choose a server location closest to you. Ignore the advanced options for now, and a default virtual machine will be created. A default machine(n1-standard-4) has 4 vCPUS and 15GB RAM which is sufficient for submodules 1-3 using the example dataset. Creating a machine may take a few minutes to finish.
-
-The notebook for submodule 4 uses a custom image called `nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9`. The n1-standard-8 machine type is sufficient for the example data used in this notebook. Remember to check yes to auto install required drivers and adjust your machine type under advanced options when you create your notebook, as shown below. 
+Follow the steps highlighted [here](https://github.com/STRIDES/NIHCloudLabGCP/blob/main/docs/vertexai.md) to create a new user-managed notebook in Vertex AI. Follow steps 1-8 and be especially careful to enable idle shutdown as highlighted in step 7.
 
 **Notebook Creation for submodules 1-3:**
-![ATAC-Seq workflow](images/Workbenchr.png)
+
+Notebooks for submodules 1-3 use a GCP provided 'Python3' image. You can then choose a name for your virtual machine, you can name it whatever you like. A default machine (n1-standard-4) has 4 vCPUS and 15GB RAM which is sufficient for submodules 1-3 using the example dataset. Creating a machine may take a few minutes to finish.
 
 **Notebook Creation for submodule 4:**
 
-Step 1: Click Create New, click Advanced Options at the bottom of the screen, go to the Environment tab on the left, select Debian 10 under Operating System and Custom container under Environment
+The notebook for submodule 4 uses a custom image, which means it needs to run in a separate VM from submodules 1-3. To configure this, you should select Debian 10 and Custom container in the Environment tab in step 5. In the Docker containter image field enter the following path `us-east4-docker.pkg.dev/nih-cl-shared-resources/nigms-sandbox/nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9@sha256:bb6703315633f21281e8caceed811f74822564a63ede01953664fe8d58b0c658` 
 
-![ATAC-Seq workflow](images/WorkbenchSM4_Env-2.png) 
-  
-  
-Step 2: In Docker containter image enter the following path `us-east4-docker.pkg.dev/nih-cl-shared-resources/nigms-sandbox/nvidiaforvertexai-rapids-22.12-cuda11.5-runtime-ubuntu20.04-py3.9@sha256:bb6703315633f21281e8caceed811f74822564a63ede01953664fe8d58b0c658`
+In step 6 in the Machine type tab, select n1-standard-8 from the dropdown box.
   
 ![ATAC-Seq workflow](images/WorkbenchSM4_Img-2.png)
   
-Step 3: Finally, in Machine Type use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. 
+Finally, in Machine Type use the following parameters to set up your machine. Make sure to select install NVIDIA Drivers. You can continue and create your machine. 
   
 ![ATAC-Seq workflow](images/WorkbenchSM4_GPU.png)
 
-
-### Starting Your Virtual Machine
-
-To start your virtual machine by clicking 'Open JupyerLab'. You will know it is running because of the green checkmark.
-
-Note, when you are finished running code, you should turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and pushing the 'Stop' button. 
-
-![ATAC-Seq workflow](images/StartStop.png)
+Note, when you are finished running code, you should turn off your virtual machine to prevent unneeded billing or resource use by checking your notebook and pushing the **Stop** button. 
 
 ### Downloading Tutorial Files
 
-Now that you have created your virtual machine, and are in the JupyterLab screen, you can run our tutorial files. But first you will need to download them.
-The easiest way to do this would be to clone the NIGMS repository into your Vertex AI notebook. This can be done by using the 'Git' menu in JupyterLab, and selecting the clone option. 
-Next you can type in the link of repository: `https://github.com/NIGMS/ATAC-Seq-and-Single-Cell-ATAC-Seq-Analysis` and click 'Clone'. 
+To clone this repository, use the Git command `git clone https://github.com/NIGMS/ATAC-Seq-and-Single-Cell-ATAC-Seq-Analysis.git` in the dropdown menu option in Jupyter notebook. Please make sure you only enter the link for the repository that you want to clone. There are other bioinformatics related learning modules available in the [NIGMS Repository](https://github.com/NIGMS).
 
-This should download our repository, and the tutorial files inside, into a folder called 'atacseqUNMC'. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
+This should download our repository, and the tutorial files inside, into a folder called 'ATAC-Seq-and-Single-Cell-ATAC-Seq-Analysis'. Double-click this folder now. Inside you will find all our tutorial files, which you can double-click and run.
 
 ![ATAC-Seq workflow](images/gitclone.png)
 
