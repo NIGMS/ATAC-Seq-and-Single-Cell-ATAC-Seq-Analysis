@@ -21,7 +21,7 @@ import cugraph
 import time
 import dask
 from cuml.dask.common.part_utils import _extract_partitions
-from cuml.common.memory_utils import with_cupy_rmm
+# from cuml.common.memory_utils import with_cupy_rmm
 
 import numpy as np
 import pandas as pd
@@ -494,7 +494,7 @@ def leiden(adata, resolution=1.0):
     
     return clusters
 
-@with_cupy_rmm
+# @with_cupy_rmm
 def sq_sum_csr_matrix(client, csr_matrix, axis=0):
     '''
     Implements sum operation for dask array when the backend is cupy sparse csr matrix
@@ -520,7 +520,7 @@ def sq_sum_csr_matrix(client, csr_matrix, axis=0):
     return dask.array.concatenate(objs, axis=axis).compute().sum(axis=axis)
 
 
-@with_cupy_rmm
+# @with_cupy_rmm
 def sum_csr_matrix(client, csr_matrix, axis=0):
     '''
     Implements sum operation for dask array when the backend is cupy sparse csr matrix
