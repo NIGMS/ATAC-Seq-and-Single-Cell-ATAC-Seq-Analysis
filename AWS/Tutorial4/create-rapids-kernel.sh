@@ -19,4 +19,4 @@ pip install jupyterquiz jupytercards scanpy wget
 conda install ipykernel -y
 
 # Install the kernel specification for Jupyter
-python -m ipykernel install --user --name rapids
+python -m ipykernel install --user --name RAPIDS
