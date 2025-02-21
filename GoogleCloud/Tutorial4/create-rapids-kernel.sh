@@ -4,7 +4,7 @@
 # Install RAPIDS https://docs.rapids.ai/install/
 # to find python version `python --version`
 # to find CUDA version `nvcc --version` 
-conda create -n rapids -c rapidsai -c conda-forge -c nvidia rapids=24.02 python=3.10 'cuda-version>=11.4,<=11.8' -y
+conda create -n rapids -c rapidsai -c conda-forge -c nvidia rapids=25.02 python=3.10 'cuda-version>=11.4,<=11.8' -y
 
 # Source bashrc to ensure conda is properly initialized
 source ~/.bashrc
